@@ -5,6 +5,7 @@
   background-size: cover;
   margin: 0 0 12.8rem 0;
 }
+
 .hero-container {
   max-width: 130rem;
   height: 100%;
@@ -32,19 +33,28 @@
 }
 
 .btn {
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  border-radius: 1.5rem;
-  background-color: #0093dd;
-  border: none;
-  color: #fff;
-  padding: 1.7rem 5rem;
-  font-size: 1.6rem;
-
   display: flex;
   align-items: center;
   gap: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0093dd;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 1.7rem 5rem;
+  letter-spacing: 0.5px;
+}
+
+.hero-cta{
+  padding: 1.3rem 7rem;
+
+}
+
+.wpp-icon {
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 .hero-img {
@@ -57,10 +67,9 @@
   justify-content: space-between;
 }
 
-.subheading-left {
+.subheading-left,
+.subheading-center{
   position: relative;
-  margin-bottom: 6rem;
-  font-size: 3rem;
 }
 
 .subheading-left::before {
@@ -69,6 +78,21 @@
   width: 0.7rem;
   height: 3.4rem;
   left: -2rem;
+  position: absolute;
+}
+
+.subheading-center{
+  text-align: center;
+}
+
+.subheading-center::before{
+  content: "";
+  background-color: #0093dd;
+  width: 13rem;
+  height: .7rem;
+  left: 50%;
+  bottom: -2rem;
+  transform: translate(-50%, 50%);
   position: absolute;
 }
 
@@ -87,12 +111,7 @@
   color: white;
 }
 
-x
 
-.wpp-icon {
-  width: 2.2rem;
-  height: 2.2rem;
-}
 
 .all-produtcts {
   display: flex;

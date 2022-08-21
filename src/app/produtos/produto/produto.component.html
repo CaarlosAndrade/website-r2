@@ -1,0 +1,18 @@
+<div [class.produto]="plusButton != 'false'">
+  <div
+    class="card-produto"
+    *ngFor="let produto of produtos"
+    [routerLink]="['/produtos', produto.id]"
+  >
+    <img class="produto-foto" [src]="produto.foto" alt="" />
+    <div class="produto-info">
+      <p class="produto-preco">
+        R$ {{ produto.preco
+        }}<span class="produto-centavos">.{{ produto.centavos }} </span>
+      </p>
+      <p class="produto-nome">{{ produto.nome }}</p>
+      <p class="produto-cta">Faça uma cotação hoje mesmo</p>
+      <div class="produto-button" *ngIf="!plusButton"></div>
+    </div>
+  </div>
+</div>

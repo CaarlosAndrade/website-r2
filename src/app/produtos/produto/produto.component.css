@@ -1,0 +1,88 @@
+.card-produto {
+  border-radius: 10px;
+  background-color: #efefef;
+  box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produto-foto {
+  max-width: 80%;
+  padding: 3rem 0;
+}
+.produto-info {
+  width: 100%;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.4rem;
+
+  font-size: 2rem;
+  position: relative;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.produto-preco {
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+.produto-nome {
+  font-weight: 600;
+}
+
+.produto-cta {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #777;
+}
+.produto-centavos {
+  font-size: 1.7rem;
+}
+
+.produto-button {
+  position: absolute;
+
+  width: 5.8rem;
+  height: 5.8rem;
+  border-radius: 50%;
+
+  background-color: #0093dd;
+  top: 0;
+  right: 2.4rem;
+
+  transform: translate(0, -50%);
+}
+
+.produto-button:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+
+.produto-button:before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+
+.produto {
+  margin-bottom: 12.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10rem;
+  row-gap: 10rem;
+}

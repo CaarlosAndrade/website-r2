@@ -1,0 +1,34 @@
+<div *ngFor="let produto of produtos">
+  <div class="container produto-detalhes">
+    <div class="btn-voltar">
+      <i class="ph-arrow-left"></i>
+      Voltar para produtos
+    </div>
+    <div class="image-box">
+      <img [src]="produto.foto" alt="" class="product-image" />
+    </div>
+    <div class="info-produtos">
+      <h1 class="nome-produto">{{ produto.nome }}</h1>
+      <p class="preco-produto">
+        R$ {{ produto.preco
+        }}<span class="centavos">,{{ produto.centavos }} </span>
+      </p>
+      <p class="descricao-produto">
+        {{ produto.descricao }}
+      </p>
+
+      <p *ngIf="produto.adicional" class="info-adicional">
+        {{ produto.adicional }}
+      </p>
+
+      <button class="btn">
+        Solicitar Cotação
+        <img src="../../assets/images/whatsapp.png" class="wpp-icon" alt="" />
+      </button>
+      <p class="indicador-estoque-produto">
+        <i class="ph-check"></i>
+        Em estoque
+      </p>
+    </div>
+  </div>
+</div>

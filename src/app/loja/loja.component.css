@@ -1,0 +1,12 @@
+.produtos {
+  margin-top: 12.8rem;
+}
+
+.subheading::before {
+  content: "";
+  background-color: #0093dd;
+  width: 0.7rem;
+  height: 3.4rem;
+  left: -2rem;
+  position: absolute;
+}

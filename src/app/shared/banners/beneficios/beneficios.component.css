@@ -1,0 +1,50 @@
+
+
+.card-beneficios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12.8rem;
+  margin-bottom: 8rem;
+}
+
+.background-beneficios {
+  width: 100%;
+  height: 95rem;
+  -webkit-clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 90%);
+  background-color: #ffffff;
+  left: 0;
+  top: -7rem;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+}
+
+.info-beneficios {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  gap: 8rem;
+}
+
+.beneficio {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 3.5rem;
+  color: #005885;
+}
+
+.container-image img {
+  max-width: 100%;
+}
+

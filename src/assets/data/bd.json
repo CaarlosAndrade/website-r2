@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "nome": "Filme Stretch Manual 1",
+    "preco": 10,
+    "centavos": 50,
+    "descricao": "O filme Stretch é utilizado para paletização e proteção de cargas, mantendo os produtos seguros e estáveis para armazenamento e transporte. Podemos fornecer o Filme Stretch com ou sem tubetes, em qualquer quantidade e de acordo com sua necessidade ",
+    "categoria": "principal",
+    "foto": "assets/images/filme-stretch.png",
+    "adicional": "Fornecemos qualquer medida"
+  },
+  {
+    "id": 2,
+    "nome": "Filme Stretch Manual 2",
+    "preco": 10,
+    "centavos": 50,
+    "descricao": "O filme Stretch é utilizado para paletização e proteção de cargas, mantendo os produtos seguros e estáveis para armazenamento e transporte. Podemos fornecer o Filme Stretch com ou sem tubetes, em qualquer quantidade e de acordo com sua necessidade ",
+    "categoria": "principal",
+    "foto": "assets/images/filme-stretch.png"
+  },
+  {
+    "id": 3,
+    "nome": "Filme Stretch Manual 3",
+    "preco": 10,
+    "centavos": 50,
+    "descricao": "O filme Stretch é utilizado para paletização e proteção de cargas, mantendo os produtos seguros e estáveis para armazenamento e transporte. Podemos fornecer o Filme Stretch com ou sem tubetes, em qualquer quantidade e de acordo com sua necessidade ",
+    "categoria": "principal",
+    "foto": "assets/images/filme-stretch.png"
+  },
+  {
+    "id": 4,
+    "nome": "Filme Stretch Manual",
+    "preco": 10,
+    "centavos": 50,
+    "descricao": "O filme Stretch é utilizado para paletização e proteção de cargas, mantendo os produtos seguros e estáveis para armazenamento e transporte. Podemos fornecer o Filme Stretch com ou sem tubetes, em qualquer quantidade e de acordo com sua necessidade ",
+    "categoria": "principal",
+    "foto": "assets/images/filme-stretch.png"
+  },
+  {
+    "id": 4,
+    "nome": "Filme Stretch Manual 4",
+    "preco": 10,
+    "centavos": 50,
+    "descricao": "O filme Stretch é utilizado para paletização e proteção de cargas, mantendo os produtos seguros e estáveis para armazenamento e transporte. Podemos fornecer o Filme Stretch com ou sem tubetes, em qualquer quantidade e de acordo com sua necessidade ",
+    "categoria": "geral",
+    "foto": "assets/images/filme-stretch.png"
+  }
+]

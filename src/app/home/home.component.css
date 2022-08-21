@@ -67,34 +67,7 @@
   justify-content: space-between;
 }
 
-.subheading-left,
-.subheading-center{
-  position: relative;
-}
 
-.subheading-left::before {
-  content: "";
-  background-color: #0093dd;
-  width: 0.7rem;
-  height: 3.4rem;
-  left: -2rem;
-  position: absolute;
-}
-
-.subheading-center{
-  text-align: center;
-}
-
-.subheading-center::before{
-  content: "";
-  background-color: #0093dd;
-  width: 13rem;
-  height: .7rem;
-  left: 50%;
-  bottom: -2rem;
-  transform: translate(-50%, 50%);
-  position: absolute;
-}
 
 .btn-all-products {
   background-color: transparent;

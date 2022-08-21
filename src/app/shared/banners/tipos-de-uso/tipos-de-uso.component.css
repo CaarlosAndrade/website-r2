@@ -1,3 +1,41 @@
+.tipos-de-uso{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.box-banner-tipos-de-uso{
+  grid-column: 1/3;
+  margin-bottom: 6.8rem;
+}
+
 .box-banner-tipos-de-uso img{
   width: 100%;
+}
+
+.lista-tipos-de-uso{
+  list-style-type: none;
+  margin-bottom: 10.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.tipo-uso{
+  font-size: 2.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.box-orcamento{
+  grid-column: 1/-1;
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12.8rem;
+}
+
+.btn-orcamento{
+  padding: 1.5rem 10rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
 }

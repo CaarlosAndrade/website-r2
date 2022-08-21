@@ -27,10 +27,13 @@ h2{
 
 .btn {
   background-color: #0093dd;
+  color: #fff;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 1rem;
+  font-size: 1.8rem;
 }
 
 .heading {

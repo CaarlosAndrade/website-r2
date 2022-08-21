@@ -12,7 +12,7 @@
   height: 95rem;
   -webkit-clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 90%);
   clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 90%);
-  background-color: #ffffff;
+  background-color: #fff;
   left: 0;
   top: -7rem;
   z-index: -1;

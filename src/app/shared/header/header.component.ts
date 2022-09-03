@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  active = false
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  isHamburguerActive(){
+    this.active = !this.active
+    console.log(this.active)
   }
 
 }

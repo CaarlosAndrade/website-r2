@@ -3,13 +3,12 @@
 
 <header>
   <div class="navbar">
-    <div class="logo">
-      <a href="">LOGO</a>
-    </div>
-    <div class="hamburguer"></div>
-    <ul class="menu">
-      <li><a href=""></a>Home</li>
-      <li><a href=""></a>Produtos</li>
+    <div class="logo"><a href=""><img src="../../../assets/images/logo-r2.png" alt=""></a></div>
+    <button class="hamburguer" (click)="isHamburguerActive()" [ngClass]="{rotateHamburguer: active == true}"></button>
+    <ul class="menu" [ngClass]="{menuActive: active == true}">
+      <li><a href="">Home</a></li>
+      <li><a href="">Produtos</a></li>
+      <li><a href=""><button class="btn btn-orcamento">Solicitar Orçamento</button></a></li>
     </ul>
   </div>
 </header>

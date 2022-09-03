@@ -4,7 +4,7 @@ header {
   /* ocupar 100% da largura da tela */
   width: 100%;
   /* cor de fundo do header */
-  background-color: #333;
+  background-color: #fff;
 
   /* espaçamento interno do header */
   padding: 10px 40px;
@@ -15,4 +15,165 @@ header {
   /*  grante o posicionamento no topo  */
   z-index: 999;
   /*  grante que o header fiquei acima de todos os elementos (camadas)  */
+}
+
+/* Estilização da NAV-BAR  */
+
+.navbar {
+  /* travando a largura dela para chegar no maximo a 1200px (não fica maior) */
+  max-width: 1200px;
+  /* centraliza o elemento navbar, só funciona porque temos um width definido (margin afeta o externo da box-model ) */
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilização da logo */
+
+.logo {
+  text-align: center;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hamburguer menu - construiu do zero */
+
+.hamburguer {
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  border-radius: 5px;
+  border: 0;
+
+  position: relative;
+  cursor: pointer;
+
+  display: none;
+
+
+  transition: .3s ease;
+
+}
+
+.hamburguer::after {
+  content: "";
+
+  position: absolute;
+  top: 35%;
+  left: 15%;
+
+  width: 70%;
+  height: 5%;
+  border-radius: 5px;
+
+  background-color: #222;
+  transition: .3s ease;
+}
+
+.hamburguer::before {
+  content: "";
+
+  position: absolute;
+  top: 55%;
+  left: 15%;
+
+  width: 70%;
+  height: 5%;
+  border-radius: 5px;
+
+  background-color: #222;
+  transition: .3s ease;
+}
+
+/* Menu  */
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 0px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s ease;
+  font-size: 16px;
+}
+
+.menu li a:hover {
+  color: #888;
+}
+
+/* responsividade */
+
+@media screen and (max-width: 980px) {
+  .hamburguer {
+    display: block;
+    z-index: 999;
+
+  }
+
+  .menu {
+    /* fica fixa e apenas transitamos ela */
+    position: fixed;
+
+    /* a movimentação é feita alterando a propriedade right */
+    right: -100%;
+    top: 0;
+    /* cubrindo a altira da tela inteira */
+    height: 100vh;
+    background-color: #fff;
+
+    width: 100%;
+    max-width: 250px;
+    flex-direction: column;
+    padding: 100px 20px;
+
+    transition: .5s ease;
+
+    -webkit-box-shadow: 1px 0px 42px -3px #000000;
+    box-shadow: 1px 0px 42px -3px #000000;
+  }
+
+
+  .hamburguer.active {
+    display: none;
+  }
+
+
+}
+
+
+.menuActive {
+  right: 0;
+}
+
+.rotateHamburguer::after {
+  transform: rotate(225deg);
+  top: 45%;
+  left: 15%;
+
+  transition: .3s ease;
+}
+
+.rotateHamburguer::before {
+  transform: rotate(-225deg);
+  top: 45%;
+  left: 15%;
+
+  transition: .3s ease;
+
+}
+
+.btn-orcamento {
+  padding: 10px 25px
 }

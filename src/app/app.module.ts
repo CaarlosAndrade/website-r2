@@ -13,6 +13,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { TiposDeUsoComponent } from './shared/banners/tipos-de-uso/tipos-de-uso.component';
 import { AmostraComponent } from './shared/banners/amostra/amostra.component';
 import { BeneficiosComponent } from './shared/banners/beneficios/beneficios.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { BeneficiosComponent } from './shared/banners/beneficios/beneficios.comp
     AmostraComponent,
     BeneficiosComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

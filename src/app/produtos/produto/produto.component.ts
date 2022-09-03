@@ -18,7 +18,7 @@ export class ProdutoComponent implements OnInit {
 
   ngOnInit(): void {
     this.produtoService.getProdutos().subscribe((data) => {
-      if (this.categoria == 'principal') {
+      if (this.categoria) {
         this.produtos = data.filter((p) => p.categoria == this.categoria);
         return;
       }
@@ -26,7 +26,6 @@ export class ProdutoComponent implements OnInit {
         this.produtos = data.filter((p) => p.id == this.id);
         return;
       }
-
       this.produtos = data;
     });
   }

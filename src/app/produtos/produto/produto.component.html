@@ -1,10 +1,8 @@
-<div [class.produto]="plusButton != 'false'">
-  <div
-    class="card-produto"
-    *ngFor="let produto of produtos"
-    [routerLink]="['/produtos', produto.id]"
-  >
-    <img class="produto-foto" [src]="produto.foto" alt="" />
+<div class="card-container">
+  <div class="card-produto" *ngFor="let produto of produtos" [routerLink]="['/produtos', produto.id]">
+    <div class="foto-container">
+      <img class="produto-foto" [src]="produto.foto" alt="" />
+    </div>
     <div class="produto-info">
       <p class="produto-preco">
         R$ {{ produto.preco

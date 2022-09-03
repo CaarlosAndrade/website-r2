@@ -1,3 +1,10 @@
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2rem;
+  flex-wrap: wrap;
+}
+
 .card-produto {
   border-radius: 10px;
   background-color: #efefef;
@@ -5,12 +12,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 35rem;
+}
+
+.card-produto:last-child {
+  justify-self: flex-start;
+}
+
+.card-produto:last-child {
+  justify-self: start;
 }
 
 .produto-foto {
-  max-width: 80%;
-  padding: 3rem 0;
+  width: 100%;
 }
+
 .produto-info {
   width: 100%;
   background-color: #fff;
@@ -30,6 +46,7 @@
   font-weight: 600;
   font-size: 2.4rem;
 }
+
 .produto-nome {
   font-weight: 600;
 }
@@ -39,6 +56,7 @@
   font-weight: 300;
   color: #777;
 }
+
 .produto-centavos {
   font-size: 1.7rem;
 }
@@ -77,12 +95,4 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fff;
-}
-
-.produto {
-  margin-bottom: 12.8rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 10rem;
-  row-gap: 10rem;
 }
